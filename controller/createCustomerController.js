@@ -8,6 +8,7 @@ app.controller('createCustomerController', function($scope,$location,$rootScope)
 	
 	$scope.saveNewCustomer = function(){
 		$rootScope.customerData.push($scope.newCustomerObject);
+		alert("New Customer Created Successfully");
 		$location.path("/customer");
 	};
 	
