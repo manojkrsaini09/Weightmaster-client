@@ -1,3 +1,3 @@
 app.controller('dashboardController', function($scope) {
-    $scope.message = "Dashboard page";
+    $scope.message = "Dashboard goes here...";
 });
