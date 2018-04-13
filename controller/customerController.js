@@ -1,15 +1,7 @@
-app.controller('customerController', function($scope) {
+app.controller('customerController', function($scope,$location,$rootScope) {
     $scope.message = "customer page";
-	
-	$scope.customerData = [
-	        {name:"Name1" , email: "email" , phon:"12345" , fixedLine:"457878" , address:"Address 1" , city:"Jipur", state:"Rajasthan" },
-			  {name:"Name1" , email: "email" , phon:"12345" , fixedLine:"457878" , address:"Address 1" , city:"Jipur", state:"Rajasthan" },
-			    {name:"Name1" , email: "email" , phon:"12345" , fixedLine:"457878" , address:"Address 1" , city:"Jipur", state:"Rajasthan" },
-				  {name:"Name1" , email: "email" , phon:"12345" , fixedLine:"457878" , address:"Address 1" , city:"Jipur", state:"Rajasthan" },
-				    {name:"Name1" , email: "email" , phon:"12345" , fixedLine:"457878" , address:"Address 1" , city:"Jipur", state:"Rajasthan" },
-					  {name:"Name1" , email: "email" , phon:"12345" , fixedLine:"457878" , address:"Address 1" , city:"Jipur", state:"Rajasthan" },
-					    {name:"Name1" , email: "email" , phon:"12345" , fixedLine:"457878" , address:"Address 1" , city:"Jipur", state:"Rajasthan" },
-						  {name:"Name1" , email: "email" , phon:"12345" , fixedLine:"457878" , address:"Address 1" , city:"Jipur", state:"Rajasthan" },
-	   
-	  ];
+	$scope.goToCreateCustomer = function(){
+		$location.path("/create-customer");
+	};
+	$scope.customerList = $rootScope.customerData;
 });

@@ -21,9 +21,14 @@
     <!-- bootstrap-daterangepicker -->
     <link href="css/daterangepicker.css" rel="stylesheet">
     <link href="css/green.css" rel="stylesheet">
+	 <link href="css/prettify.min.css" rel="stylesheet">
+	  <link href="css/select2.min.css" rel="stylesheet">
+	  <link href="css/switchery.min.css" rel="stylesheet">
+	   <link href="css/starrr.css" rel="stylesheet">
+	   <link href="css/daterangepicker.css" rel="stylesheet">
     <!-- Custom Theme Style -->
     <link href="css/custom.min.css" rel="stylesheet">
-	<link href="css/green.css" rel="stylesheet">
+	
     <!-- Datatables -->
     <link href="css/dataTables.bootstrap.min.css" rel="stylesheet">
     <link href="css/buttons.bootstrap.min.css" rel="stylesheet">
@@ -62,64 +67,22 @@
             <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
               <div class="menu_section">
                 <ul class="nav side-menu">
-                  <li><a href="#/"><i class="fa fa-home"></i> Dashboard <span class="fa fa-chevron-down"></span></a>
+                  <li><a href="#/"><i class="fa fa-home"></i> Dashboard </a>
                     <ul class="nav child_menu">
                       
                     </ul>
                   </li>
-                  <li><a href="#/customer"><i class="fa fa-edit"></i> Customer <span class="fa fa-chevron-down"></span></a>
-                    <ul class="nav child_menu">
-                     
-                    </ul>
-                  </li>
-                  <li><a><i class="fa fa-desktop"></i> Complaints </a>
+                  <li><a href="#/customer"><i class="fa fa-user"></i> Customer </a>
                    
                   </li>
+                  <li><a href="#"><i class="fa fa-info"></i> Complaint </a>
+                   
+                  </li>
+                 
                   
                 </ul>
               </div>
-              <!-- <div class="menu_section">
-                <h3>Live On</h3>
-                <ul class="nav side-menu">
-                  <li><a><i class="fa fa-bug"></i> Additional Pages <span class="fa fa-chevron-down"></span></a>
-                    <ul class="nav child_menu">
-                      <li><a href="e_commerce.html">E-commerce</a></li>
-                      <li><a href="projects.html">Projects</a></li>
-                      <li><a href="project_detail.html">Project Detail</a></li>
-                      <li><a href="contacts.html">Contacts</a></li>
-                      <li><a href="profile.html">Profile</a></li>
-                    </ul>
-                  </li>
-                  <li><a><i class="fa fa-windows"></i> Extras <span class="fa fa-chevron-down"></span></a>
-                    <ul class="nav child_menu">
-                      <li><a href="page_403.html">403 Error</a></li>
-                      <li><a href="page_404.html">404 Error</a></li>
-                      <li><a href="page_500.html">500 Error</a></li>
-                      <li><a href="plain_page.html">Plain Page</a></li>
-                      <li><a href="login.html">Login Page</a></li>
-                      <li><a href="pricing_tables.html">Pricing Tables</a></li>
-                    </ul>
-                  </li>
-                  <li><a><i class="fa fa-sitemap"></i> Multilevel Menu <span class="fa fa-chevron-down"></span></a>
-                    <ul class="nav child_menu">
-                        <li><a href="#level1_1">Level One</a>
-                        <li><a>Level One<span class="fa fa-chevron-down"></span></a>
-                          <ul class="nav child_menu">
-                            <li class="sub_menu"><a href="level2.html">Level Two</a>
-                            </li>
-                            <li><a href="#level2_1">Level Two</a>
-                            </li>
-                            <li><a href="#level2_2">Level Two</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li><a href="#level1_2">Level One</a>
-                        </li>
-                    </ul>
-                  </li>                  
-                  <li><a href="javascript:void(0)"><i class="fa fa-laptop"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a></li>
-                </ul>
-              </div> -->
+           
 
             </div>
             <!-- /sidebar menu -->
@@ -227,9 +190,6 @@
     <script src="js/jquery.min.js"></script>
     <!-- Bootstrap -->
     <script src="js/bootstrap.min.js"></script>
-	
-	
-	
       <script src="library/angular.js"> </script>
 	 
        <script src="library/angular-resource.js"> </script>	 
@@ -237,16 +197,27 @@
 	  <script src="app.js"> </script>
 	   <script src="controller/customerController.js"> </script>
 	    <script src="controller/dashboardController.js"> </script>
+		 <script src="controller/createCustomerController.js"> </script>
 	
     <!-- FastClick -->
     <script src="js/fastclick.js"></script>
     <!-- NProgress -->
     <script src="js/nprogress.js"></script>
     <!-- Custom Theme Scripts -->
-    
+    <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
 	<script src="js/icheck.min.js"></script>
-	
-	
+	 <script src="js/moment.min.js"></script>
+	 <script src="js/daterangepicker.js"></script>
+	  <script src="js/bootstrap-wysiwyg.min.js"></script>
+	  <script src="js/jquery.hotkeys/jquery.hotkeys.js"></script>
+	   <script src="js/prettify.js"></script>
+	    <script src="js/jquery.tagsinput.js"></script>
+		 <script src="js/switchery.min.js"></script>
+		 <script src="js/select2.full.min.js"></script>
+		    <script src="js/parsley.min.js"></script>
+			  <script src="js/autosize.min.js"></script>
+			    <script src="js/jquery.autocomplete.min.js"></script>
+				  <script src="js/starrr.js"></script>
 	<!-- Datatables -->
     <script src="js/datatable/jquery.dataTables.min.js"></script>
     <script src="js/datatable/dataTables.bootstrap.min.js"></script>
@@ -263,6 +234,6 @@
     <script src="js/jszip.min.js"></script>
     <script src="js/pdfmake.min.js"></script>
     <script src="js/vfs_fonts.js"></script>
-<script src="js/custom.min.js"></script>
+    <script src="js/custom.min.js"></script>
   </body>
 </html>
