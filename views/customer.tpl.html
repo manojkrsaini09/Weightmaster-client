@@ -39,9 +39,11 @@
                         <tr>
                           <th>Name</th>
 						  <th>Last Name</th>
+						  <th>Contact Person</th>
                           <th>Email</th>
                           <th>Phon</th>
                           <th>Fixed Line</th>
+						  <th>Gst No.</th>
                           <th>Address</th>
                           <th>City</th>
 						  <th>State</th>
@@ -51,12 +53,14 @@
                         <tr ng-repeat="customer in customerList">
                           <td>{{customer.name}}</td>
 						   <td>{{customer.lastName}}</td>
+						   <td>{{customer.contactPerson}}
                            <td>{{customer.email}}</td>
                            <td>{{customer.phon}}</td>
                            <td>{{customer.fixedLine}}</td>
+						   <td>{{customer.gstn}}</td>
                            <td>{{customer.address}}</td>
-                            <td>{{customer.city}}</td>
-							  <td>{{customer.state}}</td>
+                           <td>{{customer.city}}</td>
+						  <td>{{customer.state}}</td>
                         </tr>
                               
                       </tbody>
